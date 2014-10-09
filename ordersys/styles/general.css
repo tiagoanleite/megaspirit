@@ -1,0 +1,328 @@
+@charset "utf-8";
+
+/* ==========================================================================
+   Tabela de conteúdos
+   ==========================================================================
+
+    0.  Includes
+    1.  Úteis
+    2.  Gerais
+    3.  Cabeçaho
+    4.  Rodapé
+    5.  Corpo da página
+    
+    
+   ==========================================================================
+   0. Includes - estilos externos
+   ========================================================================== */
+
+/* @import url(normalize.css); */
+
+
+/* ==========================================================================
+   1. Úteis - cenas que vou usar bastante
+   ========================================================================== */
+
+/* faz as cenas caberem nos clássicos 990px */
+.wrapper{
+	width: 990px;
+	margin: 0 auto;
+	display: block;
+}
+
+/* resolve problemas */
+.clear{
+	clear: both;
+}
+
+/* espaçamentos? naaaah stressa! */
+.separator{
+	clear: both;
+	height: 15px;
+}
+
+/* esconde coisas */
+.hidden {
+    text-indent: -9999px;
+    visibility: hidden;
+}
+
+/* quando tudo corre mal */
+.damn{
+	border: 1px solid #FF0000;
+}
+
+/* para centrar coisas sem trabalho */
+.center{
+	text-align: center !important;
+}
+
+/* só para agradar os benfiquistas */
+.red{
+	color: red;
+}
+
+/* ==========================================================================
+   2. Gerais - define alguns estilos gerais
+   ========================================================================== */
+   
+body{
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:12px;
+	/*color: #666;*/
+	color: black;
+	background-color: #a28356;
+	margin: 0;
+}
+
+.title{
+	font-size: 16px;
+	margin-bottom: 5px;
+	color: #544b40;
+}
+
+.page_title{
+	font-size: 20px;
+	margin-bottom: 5px;
+	color: #544b40;
+}
+
+.text{
+	text-align: justify;
+}
+
+
+/* ==========================================================================
+   3. Cabeçalho - tudo o que está contido no topo da página
+   ========================================================================== */
+
+.header{
+	background-color: #544b40;
+	color: #ffffff;
+	height: 50px;
+	padding-top: 5px;
+	display:block;
+	float: left;
+	width: 100%;
+}
+
+.top_logo {
+	float:left;
+	width:150px;
+}
+
+/* menu de navegação */
+.top_menu{
+	font-size: 14px;
+	padding-top: 15px;
+	float: right;
+	width:840px;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: right;
+}
+.top_menu ul{
+	list-style:none;
+	margin:0;
+	float:right;
+}
+
+.top_menu li{
+	list-style:none;
+	margin:0;
+	float:left;
+}
+
+.top_menu ul li a {
+	text-decoration: none;
+	margin-right: 10px;
+	margin-left: 6px;
+	color: #ffffff;
+}
+
+.top_menu ul li a:hover {
+	text-decoration: underline;
+}
+
+/* ==========================================================================
+   4. Footer - tudo o que está dentro do rodapé
+   ========================================================================== */
+
+.footer {
+   position:relative;
+   bottom:0;
+   width:100%;
+   height:60px;   /* Height of the footer */
+   background: #a28356;
+   color: white;
+   text-align: center;
+
+}
+
+.footer a{
+	text-decoration: none;
+	color:white;
+}
+
+.footer a:hover{
+	text-decoration: underline;
+}
+
+.footer-lang{
+	padding-top: 10px;
+}
+
+.footer-rights{
+	padding-top: 10px;
+}
+
+
+/* ==========================================================================
+   5. Corpo da página - tudo o que é conteúdo
+   ========================================================================== */
+
+.content{
+	background-color: /*#eee*/ white;
+	height: 100%;
+	width: 100%;
+	display:block;
+	float:left;
+}
+
+/* código retirado de http://www.cssgenerator.com/ */
+.customtable a{
+	color: black;
+}
+
+.customtable {
+	margin:0px;padding:0px;
+	width:100%;
+	border:1px solid #ffffff;
+	
+	-moz-border-radius-bottomleft:0px;
+	-webkit-border-bottom-left-radius:0px;
+	border-bottom-left-radius:0px;
+	
+	-moz-border-radius-bottomright:0px;
+	-webkit-border-bottom-right-radius:0px;
+	border-bottom-right-radius:0px;
+	
+	-moz-border-radius-topright:0px;
+	-webkit-border-top-right-radius:0px;
+	border-top-right-radius:0px;
+	
+	-moz-border-radius-topleft:0px;
+	-webkit-border-top-left-radius:0px;
+	border-top-left-radius:0px;
+}.customtable table{
+    border-collapse: collapse;
+        border-spacing: 0;
+	width:100%;
+	height:100%;
+	margin:0px;padding:0px;
+}.customtable tr:last-child td:last-child {
+	-moz-border-radius-bottomright:0px;
+	-webkit-border-bottom-right-radius:0px;
+	border-bottom-right-radius:0px;
+}
+.customtable table tr:first-child td:first-child {
+	-moz-border-radius-topleft:0px;
+	-webkit-border-top-left-radius:0px;
+	border-top-left-radius:0px;
+}
+.customtable table tr:first-child td:last-child {
+	-moz-border-radius-topright:0px;
+	-webkit-border-top-right-radius:0px;
+	border-top-right-radius:0px;
+}.customtable tr:last-child td:first-child{
+	-moz-border-radius-bottomleft:0px;
+	-webkit-border-bottom-left-radius:0px;
+	border-bottom-left-radius:0px;
+}.customtable tr:hover td{
+	
+}
+.customtable tr:nth-child(odd){ background-color:#eeeeee; }
+.customtable tr:nth-child(even)    { background-color:#ffffff; }.customtable td{
+	vertical-align:middle;
+	
+	
+	border:1px solid #ffffff;
+	border-width:0px 1px 1px 0px;
+	text-align:left;
+	padding:7px;
+	/*font-size:10px;
+	font-family:Arial;
+	font-weight:bold;*/
+	color:#000000;
+}.customtable tr:last-child td{
+	border-width:0px 1px 0px 0px;
+}.customtable tr td:last-child{
+	border-width:0px 0px 1px 0px;
+}.customtable tr:last-child td:last-child{
+	border-width:0px 0px 0px 0px;
+}
+.customtable tr:first-child td{
+		background:-o-linear-gradient(bottom, #a28356 5%, #a28356 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #a28356), color-stop(1, #a28356) );
+	background:-moz-linear-gradient( center top, #a28356 5%, #a28356 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#a28356", endColorstr="#a28356");	background: -o-linear-gradient(top,#a28356,a28356);
+
+	background-color:#a28356;
+	border:0px solid #ffffff;
+	text-align:center;
+	border-width:0px 0px 1px 1px;
+	/*font-size:14px;
+	font-family:Arial;
+	font-weight:bold;*/
+	color:#ffffff;
+}
+.customtable tr:first-child:hover td{
+	background:-o-linear-gradient(bottom, #a28356 5%, #a28356 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #a28356), color-stop(1, #a28356) );
+	background:-moz-linear-gradient( center top, #a28356 5%, #a28356 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#a28356", endColorstr="#a28356");	background: -o-linear-gradient(top,#a28356,a28356);
+
+	background-color:#a28356;
+}
+.customtable tr:first-child td:first-child{
+	border-width:0px 0px 1px 0px;
+}
+.customtable tr:first-child td:last-child{
+	border-width:0px 0px 1px 1px;
+}
+
+/* cena com as opções */
+
+.options{
+	text-align:right;
+	font-size: 14px;
+}
+
+.options a{
+	text-decoration: none;
+	color: black;
+
+}
+
+.options a:hover{
+	text-decoration: underline;
+}
+
+/* título da tabela */
+
+.tabletitle{
+	text-align:center;
+	text-decoration: none;
+	/*font-weight: bold;*/
+	font-size: 14px;
+}
+
+.title{
+	font-size: 14px;
+	font-weight: bold;
+	color:black;
+}
+/* =========================================================================
+   Fim do ficheiro. Não acrescentar mais porcarias ou o homem do saco vai-te
+   buscar a casa e leva-te. Beijo doce!
+   
+   2014 - Tiago Leite (tiagoanleite@gmail.com)
+   ========================================================================== *
