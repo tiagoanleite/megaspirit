@@ -1,0 +1,65 @@
+@charset "utf-8";
+
+/* ==========================================================================
+   Tabela de conteúdos
+   ==========================================================================
+
+    0.  Includes
+    1.  Úteis
+    2.  Gerais
+    
+    
+   ==========================================================================
+   0. Includes - estilos externos
+   ========================================================================== */
+
+/* @import url(normalize.css); */
+
+
+/* ==========================================================================
+   1. Úteis - cenas que vou usar bastante
+   ========================================================================== */
+
+/* faz as cenas caberem nos clássicos 990px */
+.wrapper{
+	width: 990px;
+	margin: 0 auto;
+	display: block;
+}
+
+/* resolve problemas */
+.clear{
+	clear: both;
+}
+
+/* espaçamentos? naaaah stressa! */
+.separator{
+	clear: both;
+	height: 15px;
+}
+
+/* esconde coisas */
+.hidden {
+    text-indent: -9999px;
+    visibility: hidden;
+}
+
+/* quando tudo corre mal */
+.damn{
+	border: 1px solid #FF0000;
+}
+
+/* para centrar coisas sem trabalho */
+.center{
+	text-align: center;
+}
+
+
+/* ==========================================================================
+   2. Gerais - define alguns estilos gerais
+   ========================================================================== */
+
+body{
+	font-size: 12px;
+	font-family: sans-serif;
+}

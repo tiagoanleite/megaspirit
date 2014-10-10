@@ -1,0 +1,396 @@
+@charset "utf-8";
+
+/* ==========================================================================
+   Tabela de conteúdos
+   ==========================================================================
+
+    0.  Includes
+    1.  Úteis
+    2.  Gerais
+    3.  Cabeçaho
+    4.  Rodapé
+    5.  Página inicial
+    6.  Catálogo
+    7.  Notícias
+    8.  Página de contacto
+    
+    
+   ==========================================================================
+   0. Includes - estilos externos
+   ========================================================================== */
+
+/* @import url(normalize.css); */
+
+
+/* ==========================================================================
+   1. Úteis - cenas que vou usar bastante
+   ========================================================================== */
+
+/* faz as cenas caberem nos clássicos 990px */
+.wrapper{
+	width: 990px;
+	margin: 0 auto;
+	display: block;
+}
+
+/* resolve problemas */
+.clear{
+	clear: both;
+}
+
+/* espaçamentos? naaaah stressa! */
+.separator{
+	clear: both;
+	height: 15px;
+}
+
+/* esconde coisas */
+.hidden {
+    text-indent: -9999px;
+    visibility: hidden;
+}
+
+/* quando tudo corre mal */
+.damn{
+	border: 1px solid #FF0000;
+}
+
+/* para centrar coisas sem trabalho */
+.center{
+	text-align: center;
+}
+
+
+/* ==========================================================================
+   2. Gerais - define alguns estilos gerais
+   ========================================================================== */
+   
+body{
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:12px;
+	color: #666;
+	background-color: #a28356;
+}
+
+.title{
+	font-size: 16px;
+	margin-bottom: 5px;
+	color: #544b40;
+}
+
+.page_title{
+	font-size: 20px;
+	margin-bottom: 5px;
+	color: #544b40;
+}
+
+.text{
+	text-align: justify;
+}
+
+
+/* ==========================================================================
+   3. Cabeçalho - tudo o que está contido no topo da página
+   ========================================================================== */
+
+.header{
+	background-color: #544b40;
+	color: #ffffff;
+	height: 50px;
+	padding-top: 5px;
+}
+
+.top_logo {
+	float:left;
+	width:150px;
+}
+
+/* menu de navegação */
+.top_menu{
+	font-size: 14px;
+	padding-top: 15px;
+	float: right;
+	width:840px;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: right;
+}
+.top_menu ul{
+	list-style:none;
+	margin:0;
+	float:right;
+}
+
+.top_menu li{
+	list-style:none;
+	margin:0;
+	float:left;
+}
+
+.top_menu ul li a {
+	text-decoration: none;
+	margin-right: 10px;
+	margin-left: 6px;
+	color: #ffffff;
+}
+
+.top_menu ul li a:hover {
+	text-decoration: underline;
+}
+
+/* ==========================================================================
+   4. Footer - tudo o que está dentro do rodapé
+   ========================================================================== */
+
+.footer {
+   position:relative;
+   bottom:0;
+   width:100%;
+   height:60px;   /* Height of the footer */
+   background: #a28356;
+   color: white;
+   text-align: center;
+
+}
+
+.footer a{
+	text-decoration: none;
+	color:white;
+}
+
+.footer a:hover{
+	text-decoration: underline;
+}
+
+.footer-lang{
+	padding-top: 10px;
+}
+
+.footer-rights{
+	padding-top: 10px;
+}
+
+
+/* ==========================================================================
+   5. Corpo da página - tudo o que é conteúdo
+   ========================================================================== */
+
+.content{
+	background-color: /*#eee*/ white;
+	height: 100%;
+}
+
+.cover{
+	text-align: center;
+	width: 100%;
+	height: 250px;
+	margin-bottom: 10px;
+}
+
+
+/* ==========================================================================
+   5. Página inicial
+   ========================================================================== */
+
+/* apresentação */
+.presentation{
+	display:block;
+	width: 100%;
+	float: left;
+	margin-top: 15px;
+}
+
+.presentation-item {
+	display: block;
+	width:320px;
+	margin-right: 15px;
+	float: left;
+}
+
+.presentation-item:last-child {
+	margin-right: 0px;
+}
+
+.presentation-pic {
+	display: block;
+	width: 32px;
+	height: 32px;
+	display: inline-block;
+}
+
+.presentation-title {
+	margin-top: 5px;
+	display: block;
+	font-size: 16px;
+	color: #544b40;
+	display: inline-block;
+	margin-left: 5px;
+}
+
+.presentation-text {
+	display: block;
+	text-align:justify;
+	margin-top: 5px;
+}
+
+/* notícias */
+.news-module{
+	display:block;
+	width: 100%;
+	float: left;
+	margin-top: 15px;
+}
+
+.news-module-item {
+	display: block;
+	width:320px;
+	margin: 5px 15px 0 0;
+	float: left;
+}
+
+.news-module-item:last-child {
+	margin-right: 0px;
+}
+
+.news-module-pic {
+	display: block;
+	width: 320px;
+}
+
+.news-module-pic a {
+	display:block;
+	height:100px;
+	width:320px;
+}
+
+.news-module-title {
+	margin-top: 5px;
+	display: block;
+	text-align:center;
+}
+
+.news-module-title a {
+	text-decoration: none;
+	color: #544b40;
+}
+
+/* publicidade */
+.pub{
+	display: block;
+	height: 150px;
+	margin-top: 15px;
+	text-align: center;
+}
+
+
+/* ==========================================================================
+   6. Catálogo
+   ========================================================================== */
+
+/* menu de animais */
+.animal-menu{
+	display:block;
+	width: 100%;
+	float: left;
+	margin-top: 10px;
+}
+
+.animal-menu-item {
+	display: block;
+	width: 280px;
+	height: 120px;
+	margin: 5px 75px 0 0;
+	float: left;
+}
+
+.animal-menu-item:last-child {
+	margin-right: 0px;
+}
+
+
+/* ==========================================================================
+   7. Notícias
+   ========================================================================== */
+   
+.news-list{
+	display: block;
+	margin-top: 15px;
+}
+
+.news-list.item{
+	display: block;
+}
+
+.news-item-image{
+	display: inline-block;
+	float: left;
+	width: 190px;
+	height: 80px;
+}
+
+.news-item-detail{
+	display: block;
+	float: left;
+	margin-left: 10px;
+}
+.news-item-title{
+	display: block;
+	margin-bottom: 5px;
+	font-size: 16px;
+}
+
+.news-item-title a{
+	color: #666;
+	text-decoration: none;
+}
+
+.news-item-title a:hover{
+	color: #666;
+	text-decoration: underline;
+}
+
+.news-item-title a:visited{
+	color: #666;
+	text-decoration: none;
+}
+
+.news-item-resume{
+	display: block;
+}
+
+
+/* ==========================================================================
+   8. Página de contacto
+   ========================================================================== */
+   
+.contact-form {
+	float:left;
+	width:640px;
+}
+
+.contact-form table{
+	border-spacing: 10px;
+}
+
+.contact-info {
+	float:right;
+	width:350px;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.contact-info a{
+	text-decoration: none;
+}
+
+.contact-info a:hover{
+	text-decoration: none;
+	color: #544b40;
+}
+
+/* ==========================================================================
+   Fim do ficheiro. Não acrescentar mais porcarias ou o homem do saco vai-te
+   buscar a casa e leva-te. Beijo doce!
+   
+   2014 - Tiago Leite (tiagoanleite@gmail.com)
+   ========================================================================== *
