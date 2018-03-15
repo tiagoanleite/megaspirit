@@ -1,7 +1,7 @@
-#Descrição
+# Projeto Megaspirit
 Prova de Aptidão Tecnológica desenvolvida no âmbito do Curso Secundário de Informática e Tecnologias Multimédia do Colégio de Gaia no ano lectivo 2013/2014.
 
-#Instalação
+## Instalação
 Para poder visualizar o conteúdo desenvolvido nesta página, é necessário realizar alguns passos aqui descritos.
 
 Antes de mais, é necessário assegurar que dispõe de um Servidor Web, podendo simular com programas como XAMPP ou WAMP.
@@ -16,5 +16,5 @@ Defina também as credenciais de acesso do seu SGBD MySQL.
 
 Feito isto, é necessário importar a Base de Dados, disponibilizada em database/megaspirit.sql recorrendo à interface web da ferramenta PHPMyAdmin. Assegure-se que crie uma nova base de dados e importe a base de dados do directório fornecido.
 
-#Classificação
-Esta PAT, apesar de bastante incompleta, foi avaliada com a classificação de 20 valores, tendo sido a melhor do ano em que foi apresentada.
+## Classificação
+Esta Prova de Aptidão Tecnológica foi avaliada com a classificação de 20 valores, tendo sido a melhor do ano em que foi apresentada.
